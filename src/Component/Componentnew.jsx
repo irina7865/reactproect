@@ -1,10 +1,11 @@
 import './Newcomp.css'
 
-function Componentnew ({text}){
+function Componentnew (){
     return (
-      <div>  
-         <div className="newcomponet">{text}</div>
-      </div>
+    <div>
+        <input type='text' id='inputAdd'/>
+        <button>Add</button>
+    </div>
 )
 }
 

@@ -1,12 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
-import Componentnew from'./Component/Componentnew';
+import Componentnew from './Component/Componentnew';
+import NewTodolist from './Todolist/NewTodolist';
 
 function App() {
-  const new1 = 123
-  return (
-    <div className="App">Test{new1} <Componentnew text="text rfdfrfr" color="blue"/></div> 
-
-  );
+ const list = [
+ {id: 1 , name: "Zadacha1" , YorN: true},
+{id: 2 , name: "Zadacha2" , YorN: false}] 
+return (
+  <NewTodolist list = {list} />
+)
 }
 export default App;
