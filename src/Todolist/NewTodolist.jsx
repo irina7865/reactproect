@@ -1,15 +1,9 @@
 
 
 function NewTodolist ({list}){
-
-  return(
-    
-    <div>
-        <ul>
-            <li></li>
-        </ul>
-    </div>
-  )
+  
+  return(list.map((el) => <li> {el.name} </li>))
+  
 }
 
 export default NewTodolist
