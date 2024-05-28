@@ -13,17 +13,22 @@ function App() {
    const[ovalue, setValue] = useState('')
   const InputChange = (event) => {setValue(event.target.value)}
   function move(){
-   setList((prev)=> [...prev ,  {id: ovalue , name: ovalue , YorN: false}])
+   setList((prev)=> [...prev ,  {id: ovalue , name: ovalue , YorN: checked}])
    setValue('')
   }
   function moveD(e){
    setList(list.filter(list => list.id !== e) )
   }
+  const [checked, setChecked] = useState(false)
+  function moveChecked(e){
+    setChecked(checked) 
+  }
 return (
   <div> 
   <Componentnew func={move} ovalue = {ovalue} val={InputChange}/>
-  <NewTodolist list = {list} delet={moveD} />
+  <NewTodolist list = {list} delet={moveD} chec={moveChecked}/>
   {/* <New/> */}
+  <p>{checked?'y':'n'}</p>
   </div>
  
 )
