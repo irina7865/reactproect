@@ -1,10 +1,10 @@
+import { useState } from 'react'
 import './Newcomp.css'
 
-function Componentnew ({func}){
-    
+function Componentnew ({func ,ovalue, val}){
     return (
     <div>
-        <input type='text' id='inputAdd'  />
+        <input type='text' id='inputAdd' value ={ovalue} onChange={val} />
         <button onClick={func}>Add</button>
     </div>
 )
