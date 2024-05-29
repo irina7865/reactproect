@@ -28,7 +28,6 @@ return (
   <Componentnew func={move} ovalue = {ovalue} val={InputChange}/>
   <NewTodolist list = {list} delet={moveD} chec={moveChecked}/>
   {/* <New/> */}
-  <p>{checked?'y':'n'}</p>
   </div>
  
 )
